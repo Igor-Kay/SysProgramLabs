@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+}
+
+body{
+    background-color: rgb(17, 136, 95);
+    font-family: 'Roboto', sans-serif;
+}
+
+.center{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.inputElement input{
+    border: 0px;
+    border-radius: 0px;
+    width: 300px;
+    height: 45px;
+}
+
+.create-btn{
+    width: 150px;
+    background-color: rgb(208, 197, 197);
+}
+
+.clear-btn{
+    width: 150px;
+    background-color: rgb(156, 69, 69);
+
+}
