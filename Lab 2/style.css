@@ -1,36 +1,76 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    border-radius: 0px;
-}
-
-body{
-    background-color: rgb(17, 136, 95);
-    font-family: 'Roboto', sans-serif;
-}
-
-.center{
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: rgb(43, 73, 13);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .new-task {
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: center;
-}
-
-.inputElement input{
-    border: 0px;
-    border-radius: 0px;
-    width: 300px;
-    height: 45px;
-}
-
-.create-btn{
-    width: 150px;
-    background-color: rgb(208, 197, 197);
-}
-
-.clear-btn{
-    width: 150px;
-    background-color: rgb(156, 69, 69);
-
-}
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #new-task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #add-task-btn,
+  #clear-all-btn {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #clear-all-btn {
+    background-color: #f00;
+    color: #fff;
+  }
+  
+  .tasks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tasks-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .tasks-list li:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tasks-list li p {
+    margin: 0;
+  }
+  
+  .tasks-list li button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  

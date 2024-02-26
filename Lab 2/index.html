@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 2</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список дел</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="center">
-        <h1>
-            Список  дел
-        </h1>
+<body align = "center">
+  <div class="container">
+    <h1>Список дел</h1>
+    <div class="new-task">
+      <input type="text" placeholder="Новый элемент списка" id="new-task-input">
+      <button id="add-task-btn">Создать</button>
+      <button id="clear-all-btn">Очистить всё</button>
     </div>
+    <ul class="tasks-list"></ul>
+  </div>
 
-    <div class="center inputElement">
-        <input type="text">
-        <button class="create-btn">Создать</button>
-        <button class="clear-btn">Очистить все</button>
-    </div>
+  <script src="main.js"></script>
 </body>
 </html>
